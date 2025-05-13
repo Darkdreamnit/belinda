@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belinda Melvin - Dental Billing Done Right</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #bbf7d0 100%);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #10b981;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        .stats-item {
+            transition: all 0.3s ease;
+        }
+        .stats-item:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-tooth text-emerald-500 text-2xl mr-2"></i>
+                        <span class="font-bold text-xl text-emerald-600">Belinda Melvin</span>
+                    </a>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="nav-link text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">About</a>
+                    <a href="#expertise" class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Expertise</a>
+                    <a href="#services" class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Services</a>
+                    <a href="#contact" class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium">Contact</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+                <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        <span class="block">Dental Billing</span>
+                        <span class="block text-emerald-600">Done Right</span>
+                    </h1>
+                    <p class="mt-3 text-base text-gray-700 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                        Professional dental billing services with over 30 years of experience in the dental industry.
+                    </p>
+                    <div class="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
+                        <div class="space-y-4">
+                            <a href="#contact" class="w-full md:w-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-emerald-600 hover:bg-emerald-700 md:py-4 md:text-lg md:px-10">
+                                Get Started
+                            </a>
+                            <a href="#services" class="w-full md:w-auto flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-emerald-700 bg-emerald-100 hover:bg-emerald-200 md:py-4 md:text-lg md:px-10">
+                                Our Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center">
+                    <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+                        <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Dental office">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-emerald-600 font-semibold tracking-wide uppercase">About Me</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Belinda Melvin
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Passionate about dentistry for over 30 years
+                </p>
+            </div>
+
+            <div class="mt-16">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                    <div class="relative">
+                        <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20">
+                            <div class="pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden">
+                                <img class="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Professional woman smiling">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 sm:mt-16 lg:mt-0">
+                        <div class="pl-4 -mt-10 sm:pl-6 md:pl-8 lg:pl-0 lg:pt-20">
+                            <div class="max-w-2xl mx-auto lg:mx-0">
+                                <h3 class="text-2xl font-bold text-gray-900">My Story</h3>
+                                <div class="mt-6 space-y-6 text-gray-500">
+                                    <p>
+                                        My name is Belinda Melvin. I live in Chesapeake, Virginia. I've been married to a Navy veteran for over 22 years. We have 5 children, 3 dogs, a bird and 3 turtles. I've been in dentistry for over 30 years and it is my absolute passion!
+                                    </p>
+                                    <p>
+                                        I started out as a part-time administrative assistant at a dental practice, later became a clinical assistant to both the hygienist and dentist, along with assisting in patient scheduling. Later I transition to the treatment plan and insurance coordinator position. Shortly after I was promoted to practice manager.
+                                    </p>
+                                    <p>
+                                        Currently, I am the owner of BelMel Metrics, LLC, currently servicing clients across the United States. I believe in self-care, spending quality time with family and friends.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-emerald-50 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="stats-item bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-emerald-600 mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-emerald-100">
+                        <i class="fas fa-clock text-xl"></i>
+                    </div>
+                    <h3 class="mt-5 text-3xl font-bold text-gray-900">5000+</h3>
+                    <p class="mt-2 text-sm font-medium text-gray-500">Hours Worked</p>
+                </div>
+                <div class="stats-item bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-emerald-600 mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-emerald-100">
+                        <i class="fas fa-project-diagram text-xl"></i>
+                    </div>
+                    <h3 class="mt-5 text-3xl font-bold text-gray-900">500+</h3>
+                    <p class="mt-2 text-sm font-medium text-gray-500">Projects Finished</p>
+                </div>
+                <div class="stats-item bg-white p-6 rounded-lg shadow-md text-center">
+                    <div class="text-emerald-600 mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-emerald-100">
+                        <i class="fas fa-smile text-xl"></i>
+                    </div>
+                    <h3 class="mt-5 text-3xl font-bold text-gray-900">200+</h3>
+                    <p class="mt-2 text-sm font-medium text-gray-500">Happy Clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-emerald-600 font-semibold tracking-wide uppercase">Expertise</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    My Professional Journey
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    22 years of expertise in the dental billing industry
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-emerald-500 text-white">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Practice Manager</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Managed all aspects of dental practice operations, ensuring smooth workflow and excellent patient care.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-emerald-500 text-white">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Insurance Coordinator</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Specialized in treatment plans and insurance coordination, maximizing practice revenue.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-emerald-500 text-white">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Clinical Assistant</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Assisted both hygienists and dentists while managing patient scheduling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-emerald-500 text-white">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="ml-16">
+                            <h3 class="text-lg leading-6 font-medium text-gray-900">Administrative Assistant</h3>
+                            <p class="mt-2 text-base text-gray-500">
+                                Started my dental career handling front office duties and patient relations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:text-center">
+                <h2 class="text-base text-emerald-600 font-semibold tracking-wide uppercase">Services</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Comprehensive Dental Billing Solutions
+                </p>
+                <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+                    Professional services to streamline your dental practice's financial operations
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 md:gap-y-10">
+                    <div class="service-card relative bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-md p-3">
+                                <i class="fas fa-search-dollar text-emerald-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Insurance Verification</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Verify patient's insurances to ensure coverage before treatment begins.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service-card relative bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-md p-3">
+                                <i class="fas fa-file-invoice text-emerald-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Insurance Billing</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Submit claims to dental insurance companies, follow up on unpaid claims, and handle appeals.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service-card relative bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-md p-3">
+                                <i class="fas fa-user-injured text-emerald-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Patient Billing</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Send patient statements and follow up on outstanding balances professionally.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service-card relative bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-md p-3">
+                                <i class="fas fa-clipboard-list text-emerald-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Account Auditing</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Comprehensive review of accounts to identify and resolve billing discrepancies.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service-card relative bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-md p-3">
+                                <i class="fas fa-calendar-alt text-emerald-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Patient Scheduling</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Assist with optimizing patient scheduling for hygiene and doctor appointments.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="service-card relative bg-white p-6 rounded-lg shadow-md transition-all duration-300">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-md p-3">
+                                <i class="fas fa-graduation-cap text-emerald-600 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Staff Training</h3>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <p class="text-base text-gray-500">
+                                Training for administrative and clinical staff on best practices and protocols.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+                <div>
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                        Get in touch
+                    </h2>
+                    <div class="mt-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-md p-3">
+                                <i class="fas fa-phone-alt text-emerald-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Phone</h3>
+                                <p class="mt-2 text-base text-gray-500">(757) 285-7203</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-start">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-md p-3">
+                                <i class="fas fa-envelope text-emerald-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Email</h3>
+                                <p class="mt-2 text-base text-gray-500">belmelmetrics@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="mt-6 flex items-start">
+                            <div class="flex-shrink-0 bg-emerald-100 rounded-md p-3">
+                                <i class="fas fa-map-marker-alt text-emerald-600"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg leading-6 font-medium text-gray-900">Location</h3>
+                                <p class="mt-2 text-base text-gray-500">Chesapeake, Virginia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <div class="bg-white shadow-xl rounded-lg p-6">
+                        <h3 class="text-lg font-medium text-gray-900">Send a message</h3>
+                        <form class="mt-6 space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700">Name *</label>
+                                <div class="mt-1">
+                                    <input type="text" name="name" id="name" autocomplete="name" required class="py-3 px-4 block w-full shadow-sm focus:ring-emerald-500 focus:border-emerald-500 border-gray-300 rounded-md">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email *</label>
+                                <div class="mt-1">
+                                    <input type="email" name="email" id="email" autocomplete="email" required class="py-3 px-4 block w-full shadow-sm focus:ring-emerald-500 focus:border-emerald-500 border-gray-300 rounded-md">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                                <div class="mt-1">
+                                    <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm focus:ring-emerald-500 focus:border-emerald-500 border-gray-300 rounded-md"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-emerald-600 hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8 xl:col-span-1">
+                    <div class="flex items-center">
+                        <i class="fas fa-tooth text-emerald-400 text-2xl mr-2"></i>
+                        <span class="font-bold text-xl text-white">Belinda Melvin</span>
+                    </div>
+                    <p class="text-gray-300 text-base">
+                        Professional dental billing services with over 30 years of experience in the dental industry.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Navigation
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#home" class="text-base text-gray-400 hover:text-white">
+                                        Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#about" class="text-base text-gray-400 hover:text-white">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#expertise" class="text-base text-gray-400 hover:text-white">
+                                        Expertise
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Services
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#services" class="text-base text-gray-400 hover:text-white">
+                                        Insurance Billing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#services" class="text-base text-gray-400 hover:text-white">
+                                        Patient Billing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#services" class="text-base text-gray-400 hover:text-white">
+                                        Staff Training
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="md:grid md:grid-cols-2 md:gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Contact
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#contact" class="text-base text-gray-400 hover:text-white">
+                                        Get in Touch
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:belmelmetrics@gmail.com" class="text-base text-gray-400 hover:text-white">
+                                        Email Us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+17572857203" class="text-base text-gray-400 hover:text-white">
+                                        Call Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mt-12 md:mt-0">
+                            <h3 class="text-sm font-semibold text-gray-300 tracking-wider uppercase">
+                                Legal
+                            </h3>
+                            <ul class="mt-4 space-y-4">
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Privacy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Terms
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-base text-gray-400 hover:text-white">
+                                        Cookies
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8">
+                <p class="text-base text-gray-400 text-center">
+                    &copy; 2023 BelMel Metrics, LLC. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle functionality would go here
+        // This is a placeholder for actual implementation
+        const mobileMenuButton = document.querySelector('.md\\:hidden button');
+        mobileMenuButton.addEventListener('click', function() {
+            // Implement mobile menu toggle logic here
+            console.log('Mobile menu toggled');
+        });
+    </script>
+</body>
+</html>
